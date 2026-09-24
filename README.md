@@ -647,7 +647,7 @@ terraform-mcp-server --toolsets=registry,terraform
 terraform-mcp-server --tools=search_providers,get_provider_details,list_workspaces
 ```
 
-Available toolsets: `registry`, `registry-private`, `terraform`, `all`, `default`. See `pkg/toolsets/mapping.go` for individual tool names. Cannot use both flags together.
+Available toolsets: `registry`, `registry-private`, `terraform`, `explorer`, `all`, `default`. See `pkg/toolsets/mapping.go` for individual tool names. Cannot use both flags together.
 
 ## Transport Support
 

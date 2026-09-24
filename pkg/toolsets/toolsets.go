@@ -10,6 +10,7 @@ const (
 	Registry        = "registry"
 	RegistryPrivate = "registry-private" // Private registry (TFE/TFC)
 	Terraform       = "terraform"        // TFE/TFC operations
+	Explorer        = "explorer"         // TFE/TFC Explorer queries
 
 	// Special toolsets
 	All     = "all"
@@ -43,6 +44,10 @@ var (
 		Name:        Terraform,
 		Description: "HCP Terraform/TFE operations (workspaces, runs, variables, etc.)",
 	}
+	ExplorerToolset = Toolset{
+		Name:        Explorer,
+		Description: "HCP Terraform/TFE Explorer queries and saved views",
+	}
 )
 
 // AvailableToolsets returns metadata for every toolset group. Excludes "all" and "default"
@@ -51,6 +56,7 @@ func AvailableToolsets() []Toolset {
 		RegistryToolset,
 		RegistryPrivateToolset,
 		TerraformToolset,
+		ExplorerToolset,
 	}
 }
 

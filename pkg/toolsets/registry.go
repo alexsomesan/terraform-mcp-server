@@ -103,4 +103,10 @@ var AllTools = []ToolDef{
 	// Terraform - State Versions
 	{Name: "list_state_versions", Toolset: Terraform, RequiresTFE: true},
 	{Name: "get_state_version", Toolset: Terraform, RequiresTFE: true},
+
+	// Explorer
+	{Name: "query_explorer", Toolset: Explorer, RequiresTFE: true},
+	{Name: "list_explorer_views", Toolset: Explorer, RequiresTFE: true},
+	{Name: "get_explorer_view", Toolset: Explorer, RequiresTFE: true},
+	{Name: "query_explorer_view", Toolset: Explorer, RequiresTFE: true},
 }

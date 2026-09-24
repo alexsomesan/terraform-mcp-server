@@ -160,7 +160,7 @@ func TestValidToolsetNames(t *testing.T) {
 	validNames := ValidToolsetNames()
 
 	// Check that all expected toolsets are present
-	expected := []string{"registry", "registry-private", "terraform", "all", "default"}
+	expected := []string{"registry", "registry-private", "terraform", "explorer", "all", "default"}
 	for _, name := range expected {
 		if !validNames[name] {
 			t.Errorf("ValidToolsetNames() missing expected toolset: %s", name)
