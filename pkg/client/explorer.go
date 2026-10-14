@@ -77,6 +77,39 @@ type ExplorerSavedViewResponse struct {
 	Data ExplorerSavedView `json:"data"`
 }
 
+type ExplorerGraphResponse struct {
+	Data  ExplorerGraph      `json:"data"`
+	Links ExplorerGraphLinks `json:"links"`
+}
+
+type ExplorerGraphLinks struct {
+	Next *string `json:"next"`
+}
+
+type ExplorerGraph struct {
+	ID         string                  `json:"id"`
+	Type       string                  `json:"type"`
+	Attributes ExplorerGraphAttributes `json:"attributes"`
+}
+
+type ExplorerGraphAttributes struct {
+	Nodes []ExplorerGraphNode `json:"nodes"`
+	Edges []ExplorerGraphEdge `json:"edges"`
+}
+
+type ExplorerGraphNode struct {
+	ID         string         `json:"id"`
+	EntityType string         `json:"entity-type"`
+	ExternalID string         `json:"external-id"`
+	Attributes map[string]any `json:"attributes"`
+}
+
+type ExplorerGraphEdge struct {
+	ID     string `json:"id"`
+	Source string `json:"source"`
+	Target string `json:"target"`
+}
+
 func GetExplorerClientFromContext(ctx context.Context, logger *log.Logger) (*ExplorerClient, error) {
 	httpClient, err := GetHttpClientFromContext(ctx, logger)
 	if err != nil {

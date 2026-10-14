@@ -46,7 +46,7 @@ var (
 	}
 	ExplorerToolset = Toolset{
 		Name:        Explorer,
-		Description: "HCP Terraform/TFE Explorer queries and saved views",
+		Description: "HCP Terraform/TFE Explorer queries, saved views, and relationship graphs",
 	}
 )
 

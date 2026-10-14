@@ -109,4 +109,5 @@ var AllTools = []ToolDef{
 	{Name: "list_explorer_views", Toolset: Explorer, RequiresTFE: true},
 	{Name: "get_explorer_view", Toolset: Explorer, RequiresTFE: true},
 	{Name: "query_explorer_view", Toolset: Explorer, RequiresTFE: true},
+	{Name: "query_explorer_graph", Toolset: Explorer, RequiresTFE: true},
 }

@@ -104,10 +104,11 @@ var toolFactories = map[string]toolFactory{
 	"get_state_version":   tfeTools.GetStateVersion,
 
 	// Explorer
-	"query_explorer":      tfeTools.QueryExplorer,
-	"list_explorer_views": tfeTools.ListExplorerViews,
-	"get_explorer_view":   tfeTools.GetExplorerView,
-	"query_explorer_view": tfeTools.QueryExplorerView,
+	"query_explorer":       tfeTools.QueryExplorer,
+	"list_explorer_views":  tfeTools.ListExplorerViews,
+	"get_explorer_view":    tfeTools.GetExplorerView,
+	"query_explorer_view":  tfeTools.QueryExplorerView,
+	"query_explorer_graph": tfeTools.QueryExplorerGraph,
 }
 
 // specialFactories covers the 2 tools that don't fit toolFactory's shape:
